@@ -1,0 +1,42 @@
+<!ELEMENT leaflet (title+, author, date, section+)>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+    lang (bg|en|fr) #REQUIRED
+>
+
+<!ELEMENT author (#PCDATA)>
+
+<!ELEMENT date (#PCDATA)>
+
+<!ELEMENT section (heading+, content+)>
+<!ATTLIST section
+    id ID #REQUIRED
+>
+
+<!ELEMENT heading (#PCDATA)>
+<!ATTLIST heading
+    lang (bg|en|fr) #REQUIRED
+>
+
+<!ELEMENT content (#PCDATA | sentence)*>
+<!ATTLIST content
+    lang (bg|en|fr) #REQUIRED
+>
+
+<!ELEMENT sentence (word+)>
+<!ATTLIST sentence
+    id ID #REQUIRED
+>
+
+<!ELEMENT word (#PCDATA)>
+<!ATTLIST word
+    name CDATA #IMPLIED
+    pos CDATA #REQUIRED
+    gender (masculine|feminine|neuter|common) #IMPLIED
+    number (singular|plural) #IMPLIED
+    person (1|2|3) #IMPLIED
+    tense (present|past|future|perfect|pluperfect) #IMPLIED
+    case CDATA #IMPLIED
+    degree (positive|comparative|superlative) #IMPLIED
+>
