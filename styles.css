@@ -4,20 +4,11 @@ body {
     color: #333;
     text-align: center;
     margin: 50px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Центриране на цялото съдържание хоризонтално */
 }
-
 .lang {
     display: none;
     margin-top: 20px;
-    max-width: 600px;
-    width: 100%;
-    text-align: left; /* Текстът вътре е подравнен наляв */
 }
-
 button {
     margin: 5px;
     padding: 10px;
@@ -27,14 +18,13 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #45a049;
 }
-
 .lang p {
     font-size: 1.1em;
     line-height: 1.5em;
     max-width: 600px;
     margin: 0 auto;
+    text-align: center; /* добавено */
 }
