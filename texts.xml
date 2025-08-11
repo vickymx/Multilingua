@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE leaflet SYSTEM "Multilingual_texts.dtd">
+
+<leaflet>
+    <title lang="bg">Името на лекарството</title>
+    <title lang="en">Medicine Name</title>
+    <title lang="fr">Nom du médicament</title>
+    
+    <author>Име на фармацевтичната компания</author>
+    <date>2025-08-10</date>
+    
+    <section id="indications">
+        <heading lang="bg">Показания</heading>
+        <heading lang="en">Indications</heading>
+        <heading lang="fr">Indications</heading>
+        
+        <content lang="bg">
+            <sentence id="s1">
+                <word pos="noun" gender="neuter" number="singular" person="3">Лекарството</word>
+                <word pos="verb" tense="present" person="3" number="singular">се използва</word>
+                <word pos="preposition">при</word>
+                <word pos="noun" gender="feminine" number="plural" person="3">инфекции</word>
+                <word pos="punctuation">.</word>
+            </sentence>
+            <sentence id="s2">
+                <word pos="pronoun" person="3" number="singular">То</word>
+                <word pos="verb" tense="present" person="3" number="singular">помага</word>
+                <word pos="adverb">ефективно</word>
+                <word pos="punctuation">.</word>
+            </sentence>
+        </content>
+        
+        <content lang="en">
+            The medicine is used for infections.
+        </content>
+        
+        <content lang="fr">
+            Le médicament est utilisé pour les infections.
+        </content>
+    </section>
+</leaflet>
