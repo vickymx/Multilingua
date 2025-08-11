@@ -1,43 +1,40 @@
-  <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <link rel="stylesheet" href="styles.css">
-        <meta charset="UTF-8">
-        <title>Leaflet</title>
-        <style>
-            body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-            .lang { display: none; margin-top: 20px; }
-            button { margin: 5px; padding: 10px; }
-        </style>
-        <script>
-            function showLang(lang) {
-                document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
-                document.getElementById(lang).style.display = 'block';
-            }
-            // No default language displayed on page load
-        </script>
-    </head>
-    <body>
-        <h1>Избери език / Choose language / Choisissez la langue</h1>
-        <button onclick="showLang('bg')">Български</button>
-        <button onclick="showLang('en')">English</button>
-        <button onclick="showLang('fr')">Français</button>
-    
-        <div id="bg" class="lang">
-            <h2>Показания</h2>
-            <p>Лекарството се използва при инфекции.<br>Той помага ефективно.</p>
-        </div>
-        
-        <div id="en" class="lang">
-            <h2>Indications</h2>
-            <p>The medicine is used for infections.</p>
-        </div>
-        
-        <div id="fr" class="lang">
-            <h2>Indications</h2>
-            <p>Le médicament est utilisé pour les infections.</p>
-        </div>
-        
-    </body>
-    </html>
-    
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Leaflet</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showLang(lang) {
+            document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+            document.getElementById(lang).style.display = 'block';
+        }
+        window.onload = function() {
+            showLang('bg'); // по подразбиране показваме български
+        }
+    </script>
+</head>
+<body>
+    <h1>Избери език / Choose language / Choisissez la langue</h1>
+    <button onclick="showLang('bg')">Български</button>
+    <button onclick="showLang('en')">English</button>
+    <button onclick="showLang('fr')">Français</button>
+
+    <div id="bg" class="lang">
+        <h2>Показания</h2>
+        <p>Лекарството се използва при инфекции .<br>То помага ефективно .</p>
+    </div>
+
+    <div id="en" class="lang">
+        <h2>Indications</h2>
+        <p>The medicine is used for infections.</p>
+    </div>
+
+    <div id="fr" class="lang">
+        <h2>Indications</h2>
+        <p>Le médicament est utilisé pour les infections.</p>
+    </div>
+
+</body>
+</html>
