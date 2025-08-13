@@ -13,5 +13,4 @@ This project presents a multilingual collection of short functional texts (e.g. 
 <p align="center">
  <img width="514" height="760" alt="image" src="https://github.com/user-attachments/assets/cda1b6be-ae79-4243-a1dc-7c01733b473b" />
 </p>
----
 
