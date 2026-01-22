@@ -1,0 +1,29 @@
+<!ELEMENT texts (entry+)>
+
+<!ELEMENT entry (category, lang+)>
+<!ATTLIST entry
+  key CDATA #REQUIRED
+  published (yes|no) "yes"
+>
+
+<!ELEMENT category (#PCDATA)>
+
+<!ELEMENT lang (title, content)>
+<!ATTLIST lang code (bg|en|fr|es|de) #REQUIRED>
+
+<!ELEMENT title (#PCDATA)>
+
+<!ELEMENT content (#PCDATA | p | sentence)*>
+
+<!ELEMENT p (#PCDATA)>
+
+<!ELEMENT sentence (word+)>
+<!ATTLIST sentence id ID #IMPLIED>
+
+<!ELEMENT word (#PCDATA)>
+<!ATTLIST word
+  lemma CDATA #IMPLIED
+  upos  (ADJ|ADP|ADV|AUX|CCONJ|DET|INTJ|NOUN|NUM|PART|PRON|PROPN|PUNCT|SCONJ|SYM|VERB|X) #REQUIRED
+  feats CDATA #IMPLIED
+  misc  CDATA #IMPLIED
+>
