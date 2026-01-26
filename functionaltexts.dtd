@@ -9,7 +9,7 @@
 <!ELEMENT category (#PCDATA)>
 
 <!ELEMENT lang (title, content)>
-<!ATTLIST lang code (bg|en|fr|es|de) #REQUIRED>
+<!ATTLIST lang code (bg|en|fr) #REQUIRED>
 
 <!ELEMENT title (#PCDATA)>
 
@@ -26,4 +26,5 @@
   upos  (ADJ|ADP|ADV|AUX|CCONJ|DET|INTJ|NOUN|NUM|PART|PRON|PROPN|PUNCT|SCONJ|SYM|VERB|X) #REQUIRED
   feats CDATA #IMPLIED
   misc  CDATA #IMPLIED
+
 >
